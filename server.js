@@ -44,7 +44,6 @@ axios.get('https://ipapi.co/json')
 axios.get('https://www.whatsmyua.info/api/v1/ua')
   .then(response => {
     software = response.data[0].ua.rawUa;
-    software2 = response.data[1].device.description;
   })
   .catch(error => {
     console.log(error);
